@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+}
+
+@property (nonatomic, strong) AVAudioPlayer *player;
+@property (nonatomic) BOOL isPlaying;
+@property (strong, nonatomic) UIImageView *bgImage;
+
+- (void) playSound;
+
+- (IBAction)playOrPauseSound:(id)sender;
 
 @end

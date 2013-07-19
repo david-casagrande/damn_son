@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4A034D417957062004F8A43 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A034D317957062004F8A43 /* AVFoundation.framework */; };
+		A4A034D71796DCCA004F8A43 /* trap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4A034D61796DCCA004F8A43 /* trap.jpg */; };
 		A4FD23A51794E6F600FDBF6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FD23A41794E6F600FDBF6A /* UIKit.framework */; };
 		A4FD23A71794E6F600FDBF6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FD23A61794E6F600FDBF6A /* Foundation.framework */; };
 		A4FD23A91794E6F600FDBF6A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FD23A81794E6F600FDBF6A /* CoreGraphics.framework */; };
@@ -18,9 +20,12 @@
 		A4FD23BB1794E6F600FDBF6A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4FD23BA1794E6F600FDBF6A /* Default-568h@2x.png */; };
 		A4FD23BE1794E6F600FDBF6A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FD23BC1794E6F600FDBF6A /* MainStoryboard.storyboard */; };
 		A4FD23C11794E6F600FDBF6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FD23C01794E6F600FDBF6A /* ViewController.m */; };
+		A4FD23C81794EE7600FDBF6A /* damnSon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4FD23C71794EE7600FDBF6A /* damnSon.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4A034D317957062004F8A43 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A4A034D61796DCCA004F8A43 /* trap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = trap.jpg; path = ../../../Desktop/trap.jpg; sourceTree = "<group>"; };
 		A4FD23A11794E6F600FDBF6A /* damn_son.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = damn_son.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FD23A41794E6F600FDBF6A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A4FD23A61794E6F600FDBF6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +42,7 @@
 		A4FD23BD1794E6F600FDBF6A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A4FD23BF1794E6F600FDBF6A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A4FD23C01794E6F600FDBF6A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A4FD23C71794EE7600FDBF6A /* damnSon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = damnSon.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A034D417957062004F8A43 /* AVFoundation.framework in Frameworks */,
 				A4FD23A51794E6F600FDBF6A /* UIKit.framework in Frameworks */,
 				A4FD23A71794E6F600FDBF6A /* Foundation.framework in Frameworks */,
 				A4FD23A91794E6F600FDBF6A /* CoreGraphics.framework in Frameworks */,
@@ -53,9 +60,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4A034D51796DB64004F8A43 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A4A034D61796DCCA004F8A43 /* trap.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		A4FD23981794E6F600FDBF6A = {
 			isa = PBXGroup;
 			children = (
+				A4A034D317957062004F8A43 /* AVFoundation.framework */,
 				A4FD23AA1794E6F600FDBF6A /* damn_son */,
 				A4FD23A31794E6F600FDBF6A /* Frameworks */,
 				A4FD23A21794E6F600FDBF6A /* Products */,
@@ -83,6 +99,8 @@
 		A4FD23AA1794E6F600FDBF6A /* damn_son */ = {
 			isa = PBXGroup;
 			children = (
+				A4A034D51796DB64004F8A43 /* images */,
+				A4FD23C71794EE7600FDBF6A /* damnSon.mp3 */,
 				A4FD23B31794E6F600FDBF6A /* AppDelegate.h */,
 				A4FD23B41794E6F600FDBF6A /* AppDelegate.m */,
 				A4FD23BC1794E6F600FDBF6A /* MainStoryboard.storyboard */,
@@ -163,6 +181,8 @@
 				A4FD23B91794E6F600FDBF6A /* Default@2x.png in Resources */,
 				A4FD23BB1794E6F600FDBF6A /* Default-568h@2x.png in Resources */,
 				A4FD23BE1794E6F600FDBF6A /* MainStoryboard.storyboard in Resources */,
+				A4FD23C81794EE7600FDBF6A /* damnSon.mp3 in Resources */,
+				A4A034D71796DCCA004F8A43 /* trap.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +318,7 @@
 				A4FD23C61794E6F600FDBF6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
