@@ -18,6 +18,4 @@
 
 - (void) playSound;
 
-- (IBAction)playOrPauseSound:(id)sender;
-
 @end
