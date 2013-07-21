@@ -15,6 +15,7 @@
 @property (nonatomic, strong) AVAudioPlayer *player;
 @property (nonatomic) BOOL isPlaying;
 @property (strong, nonatomic) UIImageView *bgImage;
+@property (strong, nonatomic) IBOutlet UILabel *label;
 
 - (void) playSound;
 

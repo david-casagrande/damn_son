@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#define ASSET_BY_SCREEN_HEIGHT(regular) (([[UIScreen mainScreen] bounds].size.height <= 480.0) ? [regular stringByAppendingString:@".jpg"] : [regular stringByAppendingString:@"-568h.jpg"])
 
 @interface ViewController ()
 
@@ -14,12 +15,13 @@
 
 @implementation ViewController
 @synthesize player;
+@synthesize label;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    UIImage *image = [UIImage imageNamed:@"trap.jpg"];
+    UIImage *image = [UIImage imageNamed:ASSET_BY_SCREEN_HEIGHT(@"bg")];
     self.bgImage = [[UIImageView alloc] initWithImage: image];
     [self.view insertSubview:self.bgImage atIndex:0];
 
